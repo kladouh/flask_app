@@ -16,7 +16,7 @@ def about():
 	return render_template('about.html')
 
 @app.route("/sample")
-def about():
+def sample():
 	return render_template('sample_page.html')
 
 if __name__ == "__main__":
