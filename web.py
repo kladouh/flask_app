@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
-# import weather
+import os
+import weather
 from googlefinance import getQuotes
 app = Flask(__name__)
 
@@ -37,6 +38,8 @@ def results():
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT", 5000))
 	app.run(host="0.0.0.0", port=port)
+
+
 
 # @app.route("/old_index")
 # def old_index():
