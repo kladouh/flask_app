@@ -15,7 +15,7 @@ def get_stock_price(ticker):
 
 @app.route('/')
 def index():
-    name = request.values.get('name', 'Nobody')
+    name = request.values.get('name', 'Nobody') #will return 'Nobody' is no name is provided
     greeting = "Hello {}".format(name)
     return render_template('index.html', greeting=greeting)
 
